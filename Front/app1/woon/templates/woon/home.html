@@ -1,0 +1,32 @@
+{% extends 'woon/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="main">
+    
+    <div class="imagebutton">
+      <img src="{% static 'woon/object1.PNG' %}" alt="상표검색시스템" height="150px">
+      <img src="{% static 'woon/object2.PNG' %}" alt="비엔나 코드 추천 시스템" height="150px">
+      <img src="{% static 'woon/object3.PNG' %}" alt="상표 침해 예측 시스템" height="150px">
+    </div>
+
+    <input id="search" type="button" value="상표검색시스템" onclick="
+      this.style.color = 'white'
+      this.style.backgroundColor = 'black'
+      window.location = 'search'
+    ">
+
+    <input id="recommend" type="button" value="비엔나 코드 추천 시스템" onclick="
+      this.style.color = 'white'
+      this.style.backgroundColor = 'black'
+      window.location = 'recommend'
+    ">
+
+    <input id="predict" type="button" value="상표 침해 예측 시스템" onclick="
+      this.style.color = 'white'
+      this.style.backgroundColor = 'black'
+      window.location = 'predict'
+    ">
+
+  </div>
+  {% endblock %}

@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'woon',
 ]
 
@@ -77,15 +78,12 @@ WSGI_APPLICATION = 'logo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'deeplogo', 
-        'USER': 'woon', 
-        'PASSWORD': '1376', 
-        'HOST': '192.168.55.13', 
+        'NAME': 'trademarks', 
+        'USER': 'root', 
+        'PASSWORD': 'teamlab2016@ortega', 
+        'HOST': '192.9.64.15', 
         'PORT': '3306',
-        'OPTIONS' : {
-            'read_default_file':"Users/woon/my.cnf",
-            
-        } 
+        
 }
 }
 
