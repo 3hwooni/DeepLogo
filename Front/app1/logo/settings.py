@@ -78,10 +78,10 @@ WSGI_APPLICATION = 'logo.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'trademarks', 
+        'NAME': 'deeplogo', 
         'USER': 'root', 
-        'PASSWORD': 'teamlab2016@ortega', 
-        'HOST': '192.9.64.15', 
+        'PASSWORD': '1376', 
+        'HOST': 'localhost', 
         'PORT': '3306',
         
 }

@@ -7,4 +7,6 @@ urlpatterns = [
     path('search/', views.search ,name= 'search'),
     path('recommend/', views.recommend ,name= 'recommend'),
     path('predict/', views.predict ,name= 'predict'),
+    path('test/', views.test ,name= 'test'),
+
 ]

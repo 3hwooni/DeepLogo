@@ -40,7 +40,7 @@
 
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p>상품분류: <br> 출원인: <br> 출원(국제등록)번호: <br> 출원공고번호: <br>도형코드:</p>
+          <p>상품분류: {{queryset.classification}} <br> 출원인:{{queryset.applicant}} <br> 출원(국제등록)번호:{{queryset.application_num}} <br> 출원공고번호:{{queryset.registration_num}} <br>도형코드: {{queryset.vienna_code}}</p>
         </div>
 
       </div>
