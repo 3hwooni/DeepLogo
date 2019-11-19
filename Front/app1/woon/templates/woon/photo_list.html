@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<HTML>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    </head>
+<BODY>
+    <h2>Photos</h2>
+    <p>
+        <a href="{% url 'upload_photo' %}" class="btn btn-primary">Upload Photo</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Download</th>
+                <th>Image</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            {% for photo in photos %}
+                <tr>
+                    <td>{{photo.title}}</td>
+                    <td>
+                        <a href="{{photo.image.url}}" class="btn btn-primary btn-sm" target="_blank">Download image</a>
+                    </td>
+                    <td>
+                        <img src="{{photo.image.url}}" alt="{{photo.title}}" style='width:200px;'>
+                    </td>
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+        
+</BODY>
+</HTML>
